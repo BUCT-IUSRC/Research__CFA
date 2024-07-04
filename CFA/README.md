@@ -8,10 +8,11 @@ Mingyang Li, Wei Zhang, Yadong Wang, Te Guo, Shilong Wu, Yutong Wang*, Tianyu Sh
 
 
 
-An official implementation of CFA, based on the T-SEA adversarial patch generation framework.
+An official implementation of the CFA adversarial patch generation framework.
 ## Framework Overview
 
 We interact with the middle and deep feature maps of the backbone network of the object detector using the clean image and the corresponding gradients to explore the consistency of the model’s inference logic reflected in the feature maps. We design a consistent feature attribution loss function to guide the adversarial patch to disrupt features beneficial for correct model prediction.
+
 ![pipeline.png](pipeline.png)
 
 
@@ -27,12 +28,13 @@ pip install -r requirements.txt
 ```
 Please refer to [PyTorch Docs](https://pytorch.org/get-started/previous-versions/) to install `torch` and `torchvision` for better compatibility.
 
- Dataset: INRIA Person
+### Dataset: 
+INRIA Person
 
 
 
 
-### Run
+## Run
 
 
 
