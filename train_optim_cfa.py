@@ -14,7 +14,7 @@ from utils.parser import ConfigParser
 
 
 
-def init(detector_attacker: MyUniversalAttacker, cfg: ConfigParser, data_root: str, args: object =None, log: bool =True):
+def init(detector_attacker: CFAUniversalAttacker, cfg: ConfigParser, data_root: str, args: object =None, log: bool =True):
     if log: logger(cfg, args)
 
     data_sampler = None
@@ -36,7 +36,7 @@ def init(detector_attacker: MyUniversalAttacker, cfg: ConfigParser, data_root: s
 
 
 def train_uap(cfg: ConfigParser,
-              detector_attacker: MyUniversalAttacker,
+              detector_attacker: CFAUniversalAttacker,
               save_name: str,
               args: object =None,
               data_root: str =None):
